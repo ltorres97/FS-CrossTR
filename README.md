@@ -95,8 +95,6 @@ url={https://openreview.net/forum?id=HJlWWJSFDH},
    title = {CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification},
    year = {2021},
 }
-
-
 ```
 [4] Vision Transformers with PyTorch. https://github.com/lucidrains/vit-pytorch
 
