@@ -1,6 +1,6 @@
 ## Multi-Scale Cross-Attention Transformer via Graph Embeddings for Few-Shot Molecular Property Prediction
 
-In this work, a few-shot GNN-Transformer architecture is proposed to face the challenge of low-data in molecular property prediction. It is demonstrated that FS-CrossTR achieves a superior performance on small data collections over standard graph-based methodologies.
+In this work, a few-shot GNN-Transformer architecture, FS-CrossTR is proposed to face the challenge of low-data in molecular property prediction. It is demonstrated that FS-CrossTR achieves a superior performance on small data collections over standard graph-based methodologies.
 
 A dual-branch Transformer encoder learns multi-scale representations of molecular graph embeddings across two separate branches for small and large patches. A cross-attention mechanism fuses information from both sides to learn complementary representations built on the exchangeable information of small and large branches.
 
