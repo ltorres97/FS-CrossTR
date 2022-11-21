@@ -66,7 +66,6 @@ booktitle={International Conference on Learning Representations},
 year={2020},
 url={https://openreview.net/forum?id=HJlWWJSFDH},
 }
-
 ```
 
 [2] Finn, C., Abbeel, P., Levine, S.: Model-agnostic meta-learning for fast adaptation of deep networks. In: 34th International Conference on Machine Learning, ICML 2017, vol. 3 (2017). https://doi.org/10.48550/arXiv.1703.03400
@@ -79,7 +78,6 @@ url={https://openreview.net/forum?id=HJlWWJSFDH},
   year      = {2017},
   url       = {http://arxiv.org/abs/1703.03400}
 }
-
 ```
 
 [3] Chen, C. F., Fan, Q., & Panda, R. (2021). CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification. In Proceedings of the IEEE International Conference on Computer Vision (pp. 347–356). Institute of Electrical and Electronics Engineers Inc. https://doi.org/10.1109/ICCV48922.2021.00041.
