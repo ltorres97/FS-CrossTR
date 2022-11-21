@@ -105,7 +105,6 @@ url={https://openreview.net/forum?id=HJlWWJSFDH},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/lucidrains/vit-pytorch}},
 }
-
 ```
 
 
