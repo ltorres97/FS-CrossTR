@@ -59,12 +59,12 @@ We used the following Python packages for core development. We tested on Python 
 
 ```
 @inproceedings{
-hu2020pretraining,
-title={Strategies for Pre-training Graph Neural Networks},
-author={Hu, Weihua and Liu, Bowen and Gomes, Joseph and Zitnik, Marinka and Liang, Percy and Pande, Vijay and Leskovec, Jure},
-booktitle={International Conference on Learning Representations},
-year={2020},
-url={https://openreview.net/forum?id=HJlWWJSFDH},
+  hu2020pretraining,
+  title={Strategies for Pre-training Graph Neural Networks},
+  author={Hu, Weihua and Liu, Bowen and Gomes, Joseph and Zitnik, Marinka and Liang, Percy and Pande, Vijay and Leskovec, Jure},
+  booktitle={International Conference on Learning Representations},
+  year={2020},
+  url={https://openreview.net/forum?id=HJlWWJSFDH},
 }
 ```
 
