@@ -65,7 +65,7 @@ for epoch in range(1, 10000):
             exp[i] = roc_scores[i]
             is_best = True
             
-    filename = "results-exp/FS-CrossTR-tox21-10-wwwwwwwwwwwwww.txt"
+    filename = "results-exp/FS-CrossTR-tox21-10.txt"
     file = open(filename, "a")
     file.write("ROC-AUC scores:\t")
     #file.write(str(exp))
