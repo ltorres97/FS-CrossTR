@@ -213,7 +213,7 @@ class GNNTR(nn.Module):
             self.transformer.train()
         device = torch.device("cuda:" + str(self.device)) if torch.cuda.is_available() else torch.device("cpu")
         
-        support_sets, query_sets = sample_train(self.tasks, self.data, self.batch_size, self.n_support, self.n_query)
+        support_sets, query_sets = sample_train(self.train_tasks, self.data, self.batch_size, self.n_support, self.n_query)
         
         for k in range(0, self.k_train):
             graph_params = parameters_to_vector(self.gnn.parameters())
