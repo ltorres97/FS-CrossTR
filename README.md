@@ -20,7 +20,7 @@ Contact Information: (uc2015241578@student.uc.pt, luistorres@dei.uc.pt), if you 
 
 The Tox21 and SIDER datasets are downloaded from [Data](http://snap.stanford.edu/gnn-pretrain/data/) (chem_dataset.zip). 
 
-The script loader.py pre-processes the data and transforms SMILES strings into molecular graphs using RDKit.Chem. 
+The script data.py pre-processes the data and transforms SMILES strings into molecular graphs using RDKit.Chem. 
 
 Data pre-processing and pre-trained models are implemented based on [Strategies for Pre-training Graph Neural Networks (Hu et al.) (2020)](https://arxiv.org/abs/1905.12265).
 
