@@ -57,9 +57,7 @@ if tl == 0:
 if tl == 1:
    exp = [[]]
    labels = ['Mean_Task']
-   
-    
-    
+      
 N = 30
    
 for epoch in range(1, 10000):
@@ -111,8 +109,3 @@ for epoch in range(1, 10000):
     #plt.savefig('plots/boxplot_GT_'+ str(dataset) + '_' + str(support_set), dpi=300)
     plt.show()
     plt.close(fig)
-    
-       
-    if epoch >= N/2:
-        for list_acc in exp:
-            print(str(epoch) + " Support Sets: (Mean:"+ str(statistics.mean(list_acc)) +", SD:" +str(statistics.stdev(list_acc)) + ")")
