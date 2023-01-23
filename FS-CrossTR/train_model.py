@@ -1,8 +1,5 @@
-import argparse
 import torch
 from gnntr_train import GNNTR
-import shutil
-import gc
 
 def save_ckp(state, is_best, checkpoint_dir, best_model_dir, filename, best_model):
     f_path = checkpoint_dir + filename
