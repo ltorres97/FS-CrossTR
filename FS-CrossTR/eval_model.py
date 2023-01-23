@@ -46,8 +46,6 @@ model_eval.to(device)
 
 print("Dataset:", dataset)
 
-roc_auc_list = []
-
 if tl == 0:
     if dataset== "tox21":
         exp = [[],[],[]]
@@ -69,12 +67,7 @@ for epoch in range(1, 10000):
     roc_scores, gnn_model, tr_model, gnn_opt, tr_opt = model_eval.meta_evaluate() #FS-CrossTR
    
     #roc_scores, gnn_model, gnn_opt = model.meta_evaluate(grads) #baselines
-    if roc_auc_list != []:
-        for score in range(len(roc_auc_list)):
-
-            if roc_auc_list[score] < roc_scores[score]:
-                roc_auc_list[score] = roc_scores[score]
-                
+   
     if epoch <= N:
       i=0
       for a in roc_scores:
@@ -86,9 +79,6 @@ for epoch in range(1, 10000):
         if min(exp[i]) < round(roc_scores[i],4):
           index = exp[i].index(min(exp[i]))
           exp[i][index] = roc_scores[i]
-    else:
-        roc_auc_list = roc_scores
-      
     
     #save_result(epoch, N, exp, "results-exp/mean-FS-CrossTR_tox21_10.txt", tl)
     
