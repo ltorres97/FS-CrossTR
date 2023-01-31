@@ -114,7 +114,7 @@ def plot_tsne(nodes, labels, t):
     return t
 
 class GNNTR_eval(nn.Module):
-    def __init__(self, dataset, gnn, support_set, pretrained, baseline, tl):
+    def __init__(self, dataset, gnn, support_set, pretrained, baseline):
         super(GNNTR_eval,self).__init__()
                 
         if dataset == "tox21":
@@ -126,18 +126,7 @@ class GNNTR_eval(nn.Module):
             self.tasks = 27
             self.train_tasks = 21 
             self.test_tasks = 6 
-            
-        if tl == 1:
-            if dataset == "tox21":
-                self.tasks = 12
-                self.train_tasks = 0 #change to 0 for transfer-learning experiments
-                self.test_tasks = 12 #change to 12 for transfer-learning experiments
         
-            elif dataset == "sider":
-                self.tasks = 27
-                self.train_tasks = 0 #change to 0 for transfer-learning experiments
-                self.test_tasks = 27
-
         self.data = dataset
         self.baseline = baseline
         self.graph_layers = 5
@@ -274,4 +263,4 @@ class GNNTR_eval(nn.Module):
             vector_to_parameters(graph_params, self.gnn.parameters())
         
         return roc_scores, self.gnn.state_dict(), self.transformer.state_dict(), self.optimizer.state_dict(), self.meta_optimizer.state_dict()
-        #return [statistics.mean(roc_scores)], self.gnn.state_dict(), self.transformer.state_dict(), self.optimizer.state_dict(), self.meta_optimizer.state_dict()       
+       
