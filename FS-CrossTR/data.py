@@ -500,18 +500,18 @@ def get_largest_mol(mol_list):
 
 def dataset(data):
     root = "Data/" + data + "/pre-processed/"
-    T = 17
+    #T = 12
     if data == "sider":
         T = 27
     elif data == "tox21":
         T = 12
     elif data == "muv":
-        T = 27
+        T = 17
 
     for task in range(T):
         build = MoleculeDataset(root + "task_" + str(task+1), dataset=data)
 
 if __name__ == "__main__":
     # split data in mutiple data directories and convert to RDKit.Chem graph structures
-    #split_into_directories("muv")
-    dataset("muv")
+    #split_into_directories("tox21")
+    dataset("tox21")
