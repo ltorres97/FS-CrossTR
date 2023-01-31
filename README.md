@@ -4,7 +4,7 @@ In this work, a few-shot GNN-Transformer architecture is proposed to face the ch
 
 A dual-branch Transformer encoder, FS-CrossTR learns multi-scale representations across two separate branches for small and large embeddings. A cross-attention mechanism fuses information from both sides to learn complementary representations built on the exchangeable information of small and large branches.
 
-This two-module network learns deep representations from graph-level embeddings. First, a GNN module encodes the structural information of molecular graphs as a set of node and edge features. Node embeddings are then converted into graph embedding representations. A multi-scale Transformer encoder exploits the contextual information of these vectorial embeddings to propagate deep representations across attention layers at different scales.
+This two-module network learns deep representations from graph-level embeddings. First, a GNN module encodes the structural information of molecular graphs as a set of node and edge features. Node embeddings are then converted into graph embedding representations. Then, a multi-scale Transformer encoder exploits the contextual information of these vectorial embeddings to propagate deep representations across attention layers at different scales.
 
 ![ScreenShot](FS-CrossTR/plots/fs-crosstr.png?raw=true)
 
