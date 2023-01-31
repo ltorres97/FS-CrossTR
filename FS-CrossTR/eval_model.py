@@ -28,7 +28,7 @@ support_set = 10
 pretrained = "pre-trained/supervised_contextpred.pth"
 baseline = 0
 device = "cuda:0"
-model_eval = GNNTR_eval(dataset, gnn, support_set, pretrained, baseline, tl)
+model_eval = GNNTR_eval(dataset, gnn, support_set, pretrained, baseline)
 model_eval.to(device)
 
 print("Dataset:", dataset)
