@@ -139,24 +139,26 @@ class GNNTR_eval(nn.Module):
         self.k_train = 5
         self.k_test = 10
         self.device = 0
-        self.criterion = nn.BCEWithLogitsLoss()
         self.gnn = GNN_prediction(self.graph_layers, self.emb_size, jk = "last", dropout_prob = 0.5, pooling = "mean", gnn_type = gnn)
         self.transformer = TR(300, 1, 128, 256)
         self.gnn.from_pretrained(pretrained)
-        self.pos_weight = torch.FloatTensor([25]).to(self.device) #Tox21: 25; SIDER: 1
-        self.criterion_transformer = nn.BCEWithLogitsLoss(pos_weight=self.pos_weight)
+        if self.baseline == 0:
+            self.pos_weight = torch.FloatTensor([25]).to(self.device) #Tox21: 35; SIDER: 1
+            self.criterion = nn.BCEWithLogitsLoss(pos_weight=self.pos_weight)
+            self.criterion_transformer = nn.BCEWithLogitsLoss(pos_weight=self.pos_weight)
+        if self.baseline == 1:    
+            self.criterion = nn.BCEWithLogitsLoss()
         self.meta_optimizer = torch.optim.Adam(self.transformer.parameters(), lr=1e-5)
-        print(self.transformer.parameters)
         
         graph_params = []
         graph_params.append({"params": self.gnn.gnn.parameters()})
         graph_params.append({"params": self.gnn.graph_pred_linear.parameters(), "lr":self.learning_rate})
         
         self.optimizer = optim.Adam(graph_params, lr=self.learning_rate, weight_decay=0) 
-            
+    
         self.gnn.to(torch.device("cuda:0"))
         self.transformer.to(torch.device("cuda:0"))
-        
+                
         if (self.baseline == 0):
             self.ckp_path_gnn = "checkpoints/checkpoints-GT/FS-CrossTR_GNN_tox21_10.pt"
             self.ckp_path_transformer = "checkpoints/checkpoints-GT/FS-CrossTR_Transformer_tox21_10.pt"
