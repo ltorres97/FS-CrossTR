@@ -2,8 +2,9 @@ import torch
 from gnntr_train import GNNTR
 
 def save_ckp(state, is_best, checkpoint_dir, filename):
-    f_path = checkpoint_dir + filename
-    torch.save(state, f_path)
+    if is_best == True:
+        f_path = checkpoint_dir + filename
+        torch.save(state, f_path)
 
 dataset = "tox21"
 gnn= "gin" #gin, graphsage, gcn
