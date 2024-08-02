@@ -14,6 +14,8 @@ Extensive experiments on real multiproperty prediction data demonstrate the pred
 
 This repository provides the source code and datasets for the proposed work.
 
+Article Link: https://doi.org/10.1016/j.asoc.2024.111268
+
 Contact Information: (uc2015241578@student.uc.pt, luistorres@dei.uc.pt), if you have any questions about this work.
 
 ## Data Availability and Pre-Processing
