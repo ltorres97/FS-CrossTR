@@ -28,7 +28,6 @@ The code is implemented based on [Strategies for Pre-training Graph Neural Netwo
 
 ## Python Packages
 
-### Installation
 We used the following Python packages for core development. We tested on Python 3.7.
 
 ```
