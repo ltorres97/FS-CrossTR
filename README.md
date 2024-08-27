@@ -26,7 +26,7 @@ The script data.py pre-processes the data and transforms SMILES strings into mol
 
 The code is implemented based on [Strategies for Pre-training Graph Neural Networks (Hu et al.) (2020)](https://arxiv.org/abs/1905.12265).
 
-## Code Usage
+## Python Packages
 
 ### Installation
 We used the following Python packages for core development. We tested on Python 3.7.
