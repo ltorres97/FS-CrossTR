@@ -81,7 +81,17 @@ We used the following Python packages for core development. We tested on Python 
 }
 ```
 
-[3] Chen, C. F., Fan, Q., & Panda, R. (2021). CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification. In Proceedings of the IEEE International Conference on Computer Vision (pp. 347–356). Institute of Electrical and Electronics Engineers Inc. https://doi.org/10.1109/ICCV48922.2021.00041.
+[3] Guo, Z., Zhang, C., Yu, W., Herr, J., Wiest, O., Jiang, M., & Chawla, N. V. (2021). Few-shot graph learning for molecular property prediction. In The Web Conference 2021 - Proceedings of the World Wide Web Conference, WWW 2021 (pp. 2559–2567). Association for Computing Machinery, Inc. https://doi.org/10.1145/3442381.3450112
+```
+@article{guo2021few,
+  title={Few-Shot Graph Learning for Molecular Property Prediction},
+  author={Guo, Zhichun and Zhang, Chuxu and Yu, Wenhao and Herr, John and Wiest, Olaf and Jiang, Meng and Chawla, Nitesh V},
+  journal={arXiv preprint arXiv:2102.07916},
+  year={2021}
+}
+```
+
+[4] Chen, C. F., Fan, Q., & Panda, R. (2021). CrossViT: Cross-Attention Multi-Scale Vision Transformer for Image Classification. In Proceedings of the IEEE International Conference on Computer Vision (pp. 347–356). Institute of Electrical and Electronics Engineers Inc. https://doi.org/10.1109/ICCV48922.2021.00041.
 
 ```
 @inproceedings{Chen2021,
@@ -95,7 +105,7 @@ We used the following Python packages for core development. We tested on Python 
    year = {2021},
 }
 ```
-[4] Vision Transformers with PyTorch. https://github.com/lucidrains/vit-pytorch
+[5] Vision Transformers with PyTorch. https://github.com/lucidrains/vit-pytorch
 
 ```
 @misc{Phil Wang,
